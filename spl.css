@@ -1,0 +1,32 @@
+body{ 
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .form-container{
+    display: inline-block;
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: 30px;
+    box-shadow: black 5px 10px 20px 2px;
+  }
+
+  .form{
+    margin: 20px 0px 0px 80px;
+    height: auto;
+  }
+  input, select{
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: rgb(230, 230, 230);
+    float: right;
+    margin-right: 80px;
+  }
+  label{
+      float: left;
+  }

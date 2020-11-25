@@ -1,0 +1,159 @@
+<!--Home Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGRICONNECT</title>
+    <link rel="stylesheet" href="./Style.css">
+    <!--add icon here-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Pacifico&family=Parisienne&family=Poppins:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="////" href="///">
+</head>
+<body>
+    <header>
+        <!--TOP bar for login and signup and company name-->
+        <img id="logo" src="./logo.png" alt="">
+        <button class="button" type="button"><a class="links" style="background-color: rgb(252, 164, 0);" href="login.html">LOGIN</a></button>
+        <button class="button" type="button"><a class="links" style="background-color: rgb(252, 164, 0);" href="signup.html">SIGNUP</a></button>
+    <header>
+    <nav>
+        <!--nav bar-->
+        <!-- Navigation Bar -->
+        <div class="container">
+            <!-- Navigation Contents -->
+            <ul class="main-nav">
+                <li style="background-color: #00704a;"><a href="link" style="margin-left: 80px;">Home</a></li>
+                <div class="dropdown">
+                <li><a href="link" class="dropbtn">Jobs</a></li>
+                <div class="dropdown-content">
+                    <a href="link">Empty</a>
+                    <a href="link">Empty</a>
+                  </div>
+                </div>
+                <li><a href="link">Events</a></li>
+                 <div class="dropdown">
+                    <li><a href="link" class="dropbtn">About Us</a></li>
+                    <div class="dropdown-content">
+                        <a href="link">Our History</a>
+                        <a href="alink">Contact Us</a>
+                        <a href="link">Find Us</a>  
+                      </div>
+                </div>
+            </ul>
+            </div>
+    </nav>
+
+    <section id="introduction">
+      <div id="intro-text">
+          <h3 style="text-decoration: underline;">What we strive for</h3>
+          <p>Agri-Connect is a service that connects the farmers with the infustries. 
+              Using Agri-Connect the farmers have a place to sell and the industry have a place to buy.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere excepturi harum ea vel et, 
+          soluta cumque officiis nostrum hic odit delectus qui iste vitae adipisci nam itaque fugit sint 
+          perferendis dolore recusandae beatae distinctio sed suscipit. Illum ducimus culpa reprehenderit 
+          facilis? Perferendis numquam ut quibusdam libero facere vitae nemo harum.</p>
+      </div>
+        <div id="farmer-image" >
+            <img id="farmer" style="border-radius: 150px;" src="./farmer.png" alt="farmer">
+        </div>
+    </section>
+    <section class="sideshow">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="farm1.jpg" style="width:100%" height="600px">
+            </div>
+            
+            <div class="mySlides fade">
+
+              <img src="farm2.png" style="width:100%"height="600px">
+            </div>
+            
+            <div class="mySlides fade">
+
+              <img src="farm3.png" style="width:100%" height="600px" >
+            </div>
+
+            <div class="mySlides fade">
+              <img src="farm4.jpg" style="width:100%"height="600px" >
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center; margin-bottom: 15px;">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="foot1">
+            <h3 class="footer-header">Address</h4>
+            <p>
+                Cecilia Chapman <br>
+                711-2880 Nulla St.
+                Mankato Mississippi 96522 <br>
+                (257) 563-7401
+                <br><br>
+                Iris Watson <br>
+                P.O. Box 283 8562 Fusce Rd.
+                Frederick Nebraska 20620 <br>
+                (372) 587-2335
+            </p>
+        </div>
+        <div class="foot2">
+            <h3 class="footer-header">About</h4>
+            <p>The history of transport is largely one of technological innovation. Advances in technology have allowed people to travel farther, explore more territory, and expand their influence over larger and larger areas. 
+                <br>
+                            Originally established in 1951 by Ram Sharma as a Railway Incharge serving people, it was sold in 1953 to the Panchayat, who expanded it to a full working site.</p>
+        </div>
+        <div class="foot3">
+            <h3 class="footer-header">Links</h3>
+            <p><a class="links"  style="margin-left: 200px;" href="link">Facebook</a>  <br></p>
+                <a class="links" style="margin-left: 210px;" href="link">Instagram</a>  <br></p>
+                <a class="links" style="margin-left: 212px;" href="link">Youtube</a>  <br></p>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

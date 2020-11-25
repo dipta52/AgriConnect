@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    display: inline-block;
+    width: 100%;
+
+}
+
+#logo{
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    float: right;
+    margin: 45px 55px 15px 30px;
+    border-radius: 20px;
+    background-color:rgb(252, 164, 0);
+    font-size: 120%;
+}
+.button a:hover {
+    color: #00704a;
+    border-radius: 10px;
+}
+
+
+/* nav bar */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.main-nav {
+    padding: 0;
+    list-style: none;
+    font-family: "Lobster Two", cursive;
+    margin-top: 10px;
+    width: 100%;
+    height: 50%;
+    background-color: #00704a;
+    padding: 30px;
+    
+  }
+  
+  .main-nav li {
+    display: inline;
+    margin: 30px;
+
+  }
+  .main-nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 8px 20px;
+    color: #00704a;
+    border-radius: 10px;
+  }
+  .main-nav li a:hover {
+    background-color: #00704a;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    background: url(Images/dropdownarrow.png) center top no-repeat;
+  }
+  
+  .dropdown-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown:hover .dropbtn {
+    content: "\f0dd";
+    background-color: #00704a;
+    border-radius: 10px;
+    color: whitesmoke;
+  }
+
+/* introduction section */
+
+#introduction{
+    display: flex;
+    background-color: #00704a;
+}
+
+#intro-text{
+    width: 50%;
+    height: 600px;
+    background-color: #00704a;
+    padding: 50px;
+    font-family: "Lobster Two", cursive;
+    color: antiquewhite;
+    font-size: 24px;
+
+}
+#intro-text, h3, p{
+    background-color: #00704a;
+    padding: 10px;
+    
+}
+
+#intro-text h3{
+    background-color: #00704a;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+#intro-text p{
+    background-color: #00704a;
+    padding: 10px 50px;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+#farmer-image{
+      width: 50%;
+      height: 600px;
+      background-color: #00704a;
+  }
+ #farmer{
+      height: 600px;
+  }
+
+/* experience scroll */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 600px;
+  margin-top: 40px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+  footer{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+    
+}
+.foot1{
+    width: 33%;
+    padding: 20px;
+    
+  }
+  
+  .foot2{
+    width: 33%;
+    padding: 20px;
+    
+  }
+  
+.foot3{
+    width: 34%;
+    float: right;
+    padding: 20px;
+    
+}
+.foot1, .foot2, .foot3{
+    background: #00704a;
+    
+}
+
+.footer-header{
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+
+}
+.links{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #00704a;
+    color: antiquewhite;
+}
